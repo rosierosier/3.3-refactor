@@ -108,7 +108,7 @@ var reverseStr = function(str) {
 // Put your answer below -------------------------
 
 var reverseStr = function(str) {
-  return: str.split('').reverse().join('');
+  return str.split('').reverse().join('');
 }
 
 
@@ -227,6 +227,18 @@ var decreaseScore = function() {
 
 // Put your answer below -------------------------
 
+(function(){
+  var score = 0;
+
+  var increaseScore = function() {
+    score++;
+  };
+
+  var decreaseScore = function() {
+    score--;
+  };
+
+}());
 
 // -----------------------------------------------
 
