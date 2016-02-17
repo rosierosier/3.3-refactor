@@ -195,6 +195,10 @@ var callTenTimes = function(callback) {
 
 // Put your answer below -------------------------
 
+function callNtimes() {
+  var range = _.range("n");
+  _.each(range, callback);
+};
 
 // -----------------------------------------------
 
