@@ -293,6 +293,14 @@ var accelerate = function(amount) {
 
 // Put your answer below -------------------------
 
+//I'm assuming that since amount is not defined, it automatically returns NaN.
+
+
+var speed = 0;
+
+var accelerate = function(parseInt(amount)) {
+  speed += amount;
+};
 
 // -----------------------------------------------
 
