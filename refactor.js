@@ -84,6 +84,7 @@ console.log("The letter is", letter);
 
 // Put your answer below -------------------------
 
+//c because "x" never gets console.logged, and "y" is console.logged first, but it has an interval delay set on it.
 
 // -----------------------------------------------
 
