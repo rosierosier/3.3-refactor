@@ -109,7 +109,7 @@ var reverseStr = function(str) {
 
 var reverseStr = function(str) {
   return str.split('').reverse().join('');
-}
+};
 
 
 // -----------------------------------------------
@@ -146,14 +146,16 @@ var spanishColor = function(colorName) {
 // Put your answer below -------------------------
 
 var spanishColor = function(colorName) {
-  colorName = {
+  var colors = {
     "rojo":"#ff0000",
     "blanco":"#ffffff",
     "azul":"#0000ff",
     "verde":"#00ff00",
     "negro":"#000000"
   }
+  return colors[colorName];
 };
+spanishColor('rojo');
 
 // -----------------------------------------------
 
@@ -172,7 +174,7 @@ var foo = "bar";
 // Put your answer below -------------------------
 
 var foo;
-var foo = "bar";
+foo = "bar";
 
 // -----------------------------------------------
 
@@ -195,8 +197,8 @@ var callTenTimes = function(callback) {
 
 // Put your answer below -------------------------
 
-function callNtimes() {
-  var range = _.range("n");
+function callNtimes(n, callback) {
+  var range = _.range(n);
   _.each(range, callback);
 };
 
@@ -263,10 +265,9 @@ var addNumbers = function(numberA, numberB) {
   "use strict";
 
   console.log(numberA + numberB);
-
-  var twoPlusTwo = addNumbers(2, 2);
+  return(numberA + numberB);
 };
-
+var twoPlusTwo = addNumbers(2, 2);
 
 // -----------------------------------------------
 
@@ -298,7 +299,8 @@ var accelerate = function(amount) {
 
 var speed = 0;
 
-var accelerate = function(parseInt(amount)) {
+var accelerate = function(amount) {
+  amount = parseInt(amount);
   speed += amount;
 };
 
